@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在线简历</title>
+</head>
+<body>
+    <h2>个人简历</h2>
+    <div class="informatinon">
+        <div>
+            <span>姓名：张三</span><br/>
+            <span>性别：男</span><br/>
+            <span>籍贯：中国</span><br/>
+            <span>生日：1995/6/6</span><br/>
+        </div>
+        <div class="right">
+            <span>毕业院校：中国大学</span><br/>
+            <span>专业：计算机科学与技术</span><br/>
+            <span>毕业时间：2020</span><br/>
+            <span>政治面貌：优秀学生</span><br/>
+        </div>
+    </div>
+    <div class="address">
+        <span>手机号:123456789</span>
+        <address><span>电子邮箱:123456789@163.com</span></address>
+    </div>
+    <div class="project">
+        <div><span>项目A：</span><em>好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上</em></div>
+        <div><span>项目B：</span><em>好好学习天天向上好好学习天天向上好好学习天天向上好好学习天天向上</em></div>
+    </div>
+</body>
+</html>
