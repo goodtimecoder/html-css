@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学习布局</title>
+    <style>
+       * {
+          padding: 0px;
+          margin: 0px;
+      }
+      .head {
+          background-color: rgba(0, 0, 0, 0.801);
+          height: 80px;
+      }
+
+      .left {
+          position: absolute;
+          right: 15%;
+          /* top: 5%; */
+      }
+
+      .left a {
+          color: aliceblue;
+          font-size: 15px;
+          display: inline-block;
+          padding-left: 5px;
+      }
+
+      .head div{
+          display: inline-block;
+      }
+
+      .logo {
+          width: 150px;
+          height: 60px;
+          position: absolute;
+          left: 20%;
+      }
+
+      .logo p{
+          padding-top: 20px;
+          color: aliceblue;
+          font-size: 30px;
+      }
+
+      .top {
+          height: 300px;
+          background-color:rgba(56, 218, 56, 0.856);
+          position: relative;
+      }
+
+      .num {
+          position: absolute;
+          top: 80%;
+          right: 10%;
+          height: 80px;
+      }
+
+      .num div {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          border-width: 2px;
+          border-style: solid;
+          background-color: aquamarine;
+          transition: transform 1s;
+
+      }
+
+      .num div:hover {
+          background-color: antiquewhite;
+          /* height: 40px; */
+          transform: scale(1,1.5);
+          cursor: pointer;
+      }
+
+      .bar {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+          height: 100px;
+      }
+      .bar_d {
+          width: 1180px;
+          margin: 0px auto;
+          height: 100px;
+          position: relative;
+      }
+
+      .bar_d1 {
+          position: absolute; 
+          left: 0px; 
+          /* top: 50%; */
+          bottom: 0px;
+          /* width: 1200px; */
+          /* float: left; */
+      }
+
+      .bar_d1 div{
+          float: left;
+          border: 1px solid rgba(204, 190, 190, 0.404);
+          border-bottom: none;
+          width: 110px;
+          padding: 10px;
+          margin: 0px;
+          border-radius: 20px 20px 0px 0px;
+          background-color: rgba(204, 190, 190, 0.404);
+          text-align: center;
+      }
+
+      .bar_d1 div:hover {
+          background-color: white;
+          /* border-bottom: 2px solid white; */
+          cursor: pointer;
+
+      }
+
+      .bar1 {
+          width: 1200px;
+          margin: 0 auto;
+          display: flex;
+      }
+
+      .bar1 div{
+          width: 33.3%;
+          border: 1px solid rgba(0, 0, 0, 0.219);
+          text-align: center;
+          height: 200px;
+          margin: 10px;
+
+      }
+
+      .bar1 span {
+          line-height: 200px;
+      }
+
+      .bar2 {
+          width: 1200px;
+          margin: 0 auto;
+          display: flex;
+      }
+
+      .bar2 div{
+          width: 25%;
+          border: 1px solid rgba(0, 0, 0, 0.219);
+          text-align: center;
+          height: 200px;
+          margin: 10px;
+
+      }
+
+      .bar2 span {
+          line-height: 200px;
+      }
+
+      .floot {
+          background-color: rgba(12, 5, 5, 0.733);
+          height: 150px;
+          width: 100%;
+      }
+
+      .floot div{
+          color: white;
+          font-size: 15px;
+          width: 600px;
+          line-height: 150px;
+          text-align: center;
+          margin: 0 auto;
+      }
+</style>
+</head>
+<body>
+    <div class="nav">
+        <div class="head">
+            <div class="logo">
+                <p>Logo</p>
+            </div>
+            <div class="left">
+                <a href="">Github</a>
+                <a href="">Register</a>
+                <a href="">Login</a>
+            </div>
+        </div>
+        <div class="top">
+            <div class="num">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div> 
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="bar">
+            <div class="bar_d">
+                <div class="bar_d1">
+                    <div>HOME</div>
+                    <div>PEOFILE</div>
+                    <div>ABOUT</div>
+                </div>
+            </div>    
+        </div>
+        <div class="bar1">
+            <div><span>this is content 1</span></div>
+            <div><span>Maybecontent2</span></div>
+            <div><span>content3</span></div>
+        </div>
+        <div class="bar2">
+            <div><span>content4</span></div>
+            <div><span>content5</span></div>
+            <div><span>content6</span></div>
+            <div><span>content7</span></div>
+        </div>
+        <div class="bar1">
+            <div><span>content8</span></div>
+            <div><span>content9</span></div>
+            <div><span>content10</span></div>
+        </div>
+    </div>
+    <div class="floot">
+        <div>@copy 2018 ife.baidu.com</div>
+    </div>
+</body>
+</html>
