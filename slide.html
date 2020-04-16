@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>轮播图</title>
+    <style>
+        .slide1{
+            width: 60%;
+            height: 80%;
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            position: absolute;
+            left: 20%;
+            top: 10%;
+        }
+
+        .slide1 img{
+            height: 100%;
+            width: 100%;
+        }
+        .active {
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <div class="slide1 active"><img src="../img/slide2/s1.png" alt="刘亦菲"></div>
+        <div class="slide1"><img src="../img/slide2/s2.png" alt="刘亦菲"></div>
+        <div class="slide1"><img src="../img/slide2/s3.png" alt="刘亦菲"></div>
+        <div class="slide1"><img src="../img/slide2/s4.png" alt="刘亦菲"></div>
+    </div>
+    <script>
+        var slide = document.getElementsByClassName('slide')[0];
+        var slide1 = document.getElementsByClassName('slide1');
+        var index = 1;
+        myslide = function(){
+            setInterval(() => {
+                if(index == 0){
+                    slide1[index].classList.add('active');
+                    // slide1[index+1].classList.remove('active');
+                    slide1[index+3].classList.remove('active');
+                }
+                if(index == 1){
+                    slide1[index].classList.add('active');
+                    // slide1[index+1].classList.remove('active');
+                    slide1[index-1].classList.remove('active');
+                }
+                if(index == 2){
+                    slide1[index].classList.add('active');
+                    // slide1[index-2].classList.remove('active');
+                    slide1[index-1].classList.remove('active'); 
+                }
+                if(index == 3){
+                    slide1[index].classList.add('active');
+                    // slide1[index-2].classList.remove('active');
+                    slide1[index-1].classList.remove('active'); 
+                }
+                index++;
+                if(index > 3){
+                    index = 0;
+                }
+            }, 2500);
+        }
+        myslide();
+    </script>
+</body>
+</html>
